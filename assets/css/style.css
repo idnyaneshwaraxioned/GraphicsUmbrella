@@ -191,23 +191,160 @@ nav {
 
 .slider-control {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 42%;
 }
 
 .slider-control a {
-  color: #FFF;
-  border-radius: 50%;
   padding: 10px 15px;
   border: 6px solid #fff;
+  border-radius: 50%;
   font-size: 25px;
+  transition: .6s;
+  color: #FFF;
+  background-color: #86af1d;
 }
 
-.prev { left: 10%;}
-.next { right: 10%;}
+.slider-control a:hover {
+  box-shadow: 0 0 20px rgba(0,0,0,.5);
+}
+.prev { left: 6%; }
+.next { right: 6%; }
 
 /* banner section ends */
 
+/* welcome section start */
+.welcome .wrapper { 
+  text-align: center;
+  color: #3c3838;
+}
+
+.welcome .wrapper h2 {
+  font-size: 33px;
+  margin: 32px 0;
+}
+
+.welcome .wrapper h2 span,
+.portfolio .wrapper h4 span,
+.advertise .wrapper h4 span
+{ color: #A0C63F;}
+
+.welcome .wrapper ul { 
+  padding: 45px 0 39px;
+  border-top: 1px dashed #c0d4c0; ;
+  justify-content: space-between;
+}
+
+.welcome .wrapper ul li{ flex-basis: 20%; }
+
+.welcome .wrapper ul li a {
+  padding: 21px 41px;
+  border-radius: 50%;
+  border: 21px solid #fff;
+  box-shadow: 0px 0px 1px rgba(0,0,0,.5);
+  font-size: 85px;
+  transition: .6s;
+  color: #FBFBFB;
+  background-color: #8faf3d;
+}
+
+.welcome .wrapper ul li a:hover {
+  border: 21px solid #86af1d;
+  color: #86af1d;
+  background-color: #FFF;
+}
+
+.welcome .wrapper ul li h3 {
+  font-size: 35px;
+  line-height: 25px;
+  margin: 18px 0;
+}
+
+.welcome .wrapper ul li h3 span {
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+
+/* welcome section ends */
+
+/* Portfolio section start */
+.portfolio .wrapper,
+.advertise .wrapper { 
+  padding: 45px 0;
+  border-top: 1px dashed #c0d4c0;
+  position: relative;
+  color: #3c3838;
+}
+
+.portfolio .wrapper h4 {
+  position: absolute;
+  top: -4%;
+  left: 4%;
+  font-size: 26px;
+}
+
+.card-group { 
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card { 
+  margin-bottom: 27px;
+  display: flex;
+  align-items: center;
+  flex-basis: 48.5%;
+  box-shadow: 0 0 1px #7d7373c2;
+  background-color: #fff; 
+}
+
+.card div:hover .card div figure {
+  opacity: .5;
+}
+.card div { flex-basis: 50%; }
+
+.card-btn a {
+  padding: 2px 10px;
+  margin: 7px 0;
+  font-size: 14px;
+  transition: .6s;
+  color: #fff;
+  background-color: #8faf3d;
+}
+
+.card-btn a:hover { 
+  color: #8faf3d;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0,0,0,.5);
+}
+
+.card-content { padding: 0 18px; }
+.card-content p { font-size: 14px; }
+/* Portfolio section end */
+
+/* Advertiser section start */
+.advertise .wrapper h4 {
+  position: absolute;
+  top: -7%;
+  left: 4%;
+  font-size: 26px;
+}
+
+.advlist li {
+  padding: 38px 20px;
+  flex-basis: 16.6%;
+  background: linear-gradient(to right, #F2F2F2, #fff 77%);
+}
+
+.advertise .wrapper div {text-align: end; }
+
+.advertise .wrapper div a {
+  padding: 2px 10px;
+  margin: 7px 0;
+  font-size: 14px;
+  transition: .6s;
+  color: #fff;
+  background-color: #8faf3d;
+}
+/* Advertiser section end */
 
 
 
