@@ -85,6 +85,7 @@ sub { bottom: -.25em; }
 body {
   box-sizing: border-box;
   font-family: sans-serif;
+  background-color: #FBFBFB;
 }
 
 a { 
@@ -107,11 +108,44 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
+header .wrapper {
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+}
 
+.logo {
+  flex-basis: 40%;
+}
+.hamburger { display: none;}
 
+.hamburger span {
+  width: 30px;
+  border-top: 2px solid #A0C63F;
+  text-indent: -99999px;
+}
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 48%;
+}
 
+.menu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
 
+.menu-item a {
+  font-size: 13px;
+  color: #333232;
+  transition: .6s;
+}
+
+.menu-item a:hover {
+  border-bottom: 1px solid #A0C63F;
+}
 /*=================================
   Header styling ends here
 =================================*/  
@@ -120,7 +154,9 @@ li {
   main styling starts here
 =================================*/
 
-
+/* banner section start */
+.banner { background-color: #A0C63F;}
+/* banner section ends */
 
 
 
