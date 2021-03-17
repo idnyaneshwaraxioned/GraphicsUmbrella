@@ -85,7 +85,7 @@ sub { bottom: -.25em; }
 body {
   box-sizing: border-box;
   font-family: sans-serif;
-  background-color: #FBFBFB;
+  background-color: #f9f7f7;
 }
 
 a { 
@@ -108,15 +108,17 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
+header { background-color: #F9F9F9; }
 header .wrapper {
   justify-content: space-between;
   align-items: center;
-  padding: 24px 0;
+  padding: 20px 0;
 }
 
 .logo {
   flex-basis: 40%;
 }
+
 .hamburger { display: none;}
 
 .hamburger span {
@@ -159,7 +161,9 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #A0C63F;}
+  background-color: #A0C63F;
+}
+
 .slider {
   margin: 30px auto;
   width: 55%;
@@ -184,9 +188,11 @@ nav {
 }
 
 .slide .content p {
-  font-size: 33px;
+  font-size: 30px;
   color: #FBFBFB;
   text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 rgba(0,0,0,.5);
 }
 
 .slider-control {
@@ -317,13 +323,22 @@ nav {
 }
 
 .card-content { padding: 0 18px; }
-.card-content p { font-size: 14px; }
+
+.card-content p,
+.footer-list p,
+.footer-list a { 
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.card-content p span,
+.footer-list p span { font-weight: bold; }
 /* Portfolio section end */
 
 /* Advertiser section start */
 .advertise .wrapper h4 {
   position: absolute;
-  top: -7%;
+  top: -5%;
   left: 4%;
   font-size: 26px;
 }
@@ -337,18 +352,17 @@ nav {
 .advertise .wrapper div {text-align: end; }
 
 .advertise .wrapper div a {
-  padding: 2px 10px;
-  margin: 7px 0;
-  font-size: 14px;
+  padding: 12px 16px;
+  border-radius: 50%;
+  margin-top: 50px;
+  font-size: 13px;
   transition: .6s;
-  color: #fff;
+  color: #efefef;
   background-color: #8faf3d;
 }
+
+.advertise .wrapper div a:hover { box-shadow: 0 0 15px rgba(0,0,0,.5); }
 /* Advertiser section end */
-
-
-
-
 
 /*=================================
   main styling ends here
@@ -358,13 +372,136 @@ nav {
   footer styling starts here
 =================================*/ 
 
+.footer-up {
+  color: #333232;
+  background-color: #fff;
+}
 
+.footer-up a { color: #333232; }
 
+.footer-up a:hover { text-shadow: 0 0 10px #000; }
 
+.footer-list { justify-content: space-between; }
 
+.footer-list li { flex-basis: 21.5%; }
 
+.footer-list li h6 {
+  margin: 16px 0;
+  font-size: 18px;
+}
 
- /*=================================
+.followus li { flex-basis: 13%; }
+
+.followus li a .fa {
+  font-size: 20px;
+  opacity: .5;
+  transition: .6s;
+}
+
+.followus li a .fa-facebook:hover { 
+  opacity: 1;
+  color: #0000ff;
+}
+
+.followus li a .fa-twitter:hover { 
+  opacity: 1;
+  color: #87ceeb;
+}
+
+.followus li a .fa-vimeo:hover,
+.followus li a .fa-users:hover{ 
+  opacity: 1;
+  color: #ff0000;
+}
+
+.followus li a .fa-dribbble:hover { 
+  opacity: 1;
+  color: #ee2748;
+}
+
+.archive ul li {
+  padding: 10px 0;
+  border-top: 1px dotted #c0d4c0;
+  display: block;
+}
+
+.contact ul li { padding: 10px 0; }
+
+.contact ul li a .fa {
+  font-size: 25px;
+  margin-right: 13px;
+  opacity: .2;
+}
+
+.contact ul li a:hover .fa-envelope-o,
+.contact ul li a:hover .fa-mobile { 
+  opacity: 1;
+  color: #ff0000;
+}
+
+.contact ul li a:hover .fa-phone { 
+  opacity: 1;
+  color: #86af1d;
+}
+
+form { text-align: end; }
+
+form input[type="text"],
+form input[type="email"] {
+  width: 94%;
+  padding: 11px 10px;
+  outline: none;
+  border: none;
+  margin: 5px 0;
+  font-style: italic;
+  background-color: #F9F9F9;
+  border-bottom: 1px solid #d4d1d1;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus { border: 1px solid #3c3838; }
+
+form input[type="submit"] {
+  padding: 11px 15px;
+  outline: none;
+  border: none;
+  margin: 5px 0;
+  color: #fff;
+  background-color: #A0C63F;
+}
+
+form input[type="submit"]:hover { box-shadow: 0 0 15px rgba(0,0,0,.5) }
+
+.footer-down {
+  margin-top: 5px;
+  padding: 4px 0;
+  background-color: #202020;
+}
+
+.footer-down .wrapper { 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #efefef;
+}
+
+.footer-down .wrapper ul { 
+  flex-basis: 25%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-down .wrapper li a {
+  color: #efefef;
+  font-size: 13px;
+}
+
+.footer-down .wrapper li a:hover { color: #A0C63F; }
+
+.footer-down .wrapper p { 
+  font-size: 11px;
+  font-weight: 600;
+ }
+/*=================================
   footer styling ends here
 =================================*/ 
 
