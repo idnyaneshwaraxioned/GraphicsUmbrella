@@ -85,6 +85,7 @@ sub { bottom: -.25em; }
 body {
   box-sizing: border-box;
   font-family: sans-serif;
+  background-color: #FBFBFB;
 }
 
 a { 
@@ -107,11 +108,44 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
+header .wrapper {
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+}
 
+.logo {
+  flex-basis: 40%;
+}
+.hamburger { display: none;}
 
+.hamburger span {
+  width: 30px;
+  border-top: 2px solid #A0C63F;
+  text-indent: -99999px;
+}
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 48%;
+}
 
+.menu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
 
+.menu-item a {
+  font-size: 13px;
+  color: #333232;
+  transition: .6s;
+}
+
+.menu-item a:hover {
+  border-bottom: 1px solid #A0C63F;
+}
 /*=================================
   Header styling ends here
 =================================*/  
@@ -120,7 +154,60 @@ li {
   main styling starts here
 =================================*/
 
+/* banner section start */
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #A0C63F;}
+.slider {
+  margin: 30px auto;
+  width: 55%;
+  flex-basis: 55%;
+ }
+.slide {
+  display: none;
+}
+.slide.active {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: grey;
+}
 
+.slide .content {
+  position: absolute;
+  width: 38%;
+  top: 20%;
+  right: 10%;
+}
+
+.slide .content p {
+  font-size: 33px;
+  color: #FBFBFB;
+  text-align: center;
+}
+
+.slider-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slider-control a {
+  color: #FFF;
+  border-radius: 50%;
+  padding: 10px 15px;
+  border: 6px solid #fff;
+  font-size: 25px;
+}
+
+.prev { left: 10%;}
+.next { left: 10%;}
+
+/* banner section ends */
 
 
 
