@@ -174,14 +174,13 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: grey;
 }
 
 .slide .content {
   position: absolute;
-  width: 38%;
-  top: 20%;
-  right: 10%;
+  width: 44%;
+  top: 15%;
+  right: 2%;
 }
 
 .slide .content p {
@@ -205,7 +204,7 @@ nav {
 }
 
 .prev { left: 10%;}
-.next { left: 10%;}
+.next { right: 10%;}
 
 /* banner section ends */
 
