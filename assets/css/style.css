@@ -100,13 +100,13 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%; 
+  width: 57.3%; 
   margin: 0 auto;
 }
+.flex { display: flex; }
 /*=================================
   Header styling starts here
 =================================*/
-
 
 
 
