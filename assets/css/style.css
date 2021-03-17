@@ -155,7 +155,58 @@ nav {
 =================================*/
 
 /* banner section start */
-.banner { background-color: #A0C63F;}
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #A0C63F;}
+.slider {
+  margin: 30px auto;
+  width: 55%;
+  flex-basis: 55%;
+ }
+.slide {
+  display: none;
+}
+.slide.active {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: grey;
+}
+
+.slide .content {
+  position: absolute;
+  width: 38%;
+  top: 20%;
+  right: 10%;
+}
+
+.slide .content p {
+  font-size: 33px;
+  color: #FBFBFB;
+  text-align: center;
+}
+
+.slider-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slider-control a {
+  color: #FFF;
+  border-radius: 50%;
+  padding: 10px 15px;
+  border: 6px solid #fff;
+  font-size: 25px;
+}
+
+.prev { left: 10%;}
+.next { left: 10%;}
+
 /* banner section ends */
 
 
